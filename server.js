@@ -5,6 +5,7 @@ var _ = require('underscore')
 var interceptor = require('./middleware')
 var app = express()
 app.use(bp.json())
+// eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNzA4MzQ1MTIzLCJleHAiOjE3MDgzNTUxMjN9
 
 app.use(interceptor.authUser)
 var userdata =[]
